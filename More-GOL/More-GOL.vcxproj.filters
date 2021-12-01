@@ -65,7 +65,7 @@
     <None Include="Config Files\Names.ini">
       <Filter>Config Files</Filter>
     </None>
-    <None Include="Config Files\patterns.ini">
+    <None Include="Config Files\Patterns.ini">
       <Filter>Config Files</Filter>
     </None>
   </ItemGroup>

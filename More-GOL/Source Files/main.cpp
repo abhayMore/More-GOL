@@ -64,7 +64,7 @@ int main()
 	grid.randomizeGrid();
 	UI allUI(window, Dosis, grid);
 
-	FileSystem PatternMatrixFile("./Config Files/patterns.ini");
+	FileSystem PatternMatrixFile("./Config Files/Patterns.ini");
 	int r = 40;
 	int c = 40;
 	std::vector<std::vector<std::vector<int>>> allPatterns;
@@ -72,10 +72,11 @@ int main()
 
 	FileSystem PatternNamesFile("./Config Files/Names.ini");
 	std::vector<sf::Text> patternNames(allPatterns.size());
-	patternNames = PatternNamesFile.getPatternNames(patternNames);
+	
 	for (int i = 0; i < patternNames.size(); i++)
 	{
 		patternNames[i].setFont(Dosis);
+		patternNames[i].setString("ERROR :  No Name Present");
 		patternNames[i].setCharacterSize(25);
 		patternNames[i].setFillColor(sf::Color::White);
 		patternNames[i].setOutlineThickness(2);
@@ -84,6 +85,7 @@ int main()
 		patternNames[i].setOrigin(patternNames[i].getLocalBounds().width / 2.0f, patternNames[i].getLocalBounds().height / 2.0f);
 		patternNames[i].setPosition(sf::Vector2f(810 + (1200 - 810) / 2, grid.getMenuLevels().y / 2));
 	}
+	patternNames = PatternNamesFile.getPatternNames(patternNames);
 
 	bool start = false;
 	bool mouseDraw = false;
