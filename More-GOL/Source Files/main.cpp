@@ -1,13 +1,5 @@
-#include <iostream>
-#include <SFML/Graphics.hpp>
-#include <string>
-
-#include <vector>
-
-#include "../Header Files/FileSystem.hpp"
-#include "../Header Files/FileSystem.hpp"
-
 #include "../Header Files/Life.hpp"
+#include "../Header Files/FileSystem.hpp"
 #include "../Header Files/UI.hpp"
 
 #define WIDTH 1200
@@ -72,7 +64,7 @@ int main()
 
 	FileSystem PatternNamesFile("./Config Files/Names.ini");
 	std::vector<sf::Text> patternNames(allPatterns.size());
-	
+
 	for (int i = 0; i < patternNames.size(); i++)
 	{
 		patternNames[i].setFont(Dosis);

@@ -93,4 +93,3 @@ void UI::drawUI(sf::RenderWindow & window)
 	window.draw(ArrowSprite[0]);
 	window.draw(ArrowSprite[1]);
 }
-

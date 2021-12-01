@@ -72,4 +72,3 @@ std::vector<sf::Text>& FileSystem::getPatternNames(std::vector<sf::Text>& patter
 		std::cout << "Failed to Load Pattern Names File" << std::endl;
 	return patternNames;
 }
-

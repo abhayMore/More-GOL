@@ -2,7 +2,6 @@
 #include <string>
 #include <sstream>
 #include <fstream>
-#include <vector>
 #include <SFML/Graphics.hpp>
 
 class FileSystem

@@ -69,4 +69,3 @@ void Button::setOutlineThickness(int size)
 {
 	text.setOutlineThickness(size);
 }
-

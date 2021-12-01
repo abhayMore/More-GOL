@@ -110,6 +110,3 @@ int Life::getResolution()
 {
 	return resolution;
 }
-
-
-
