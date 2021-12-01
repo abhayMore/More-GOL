@@ -259,3 +259,16 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+/More-GOL/sfml-window-d-2.dll
+/More-GOL/sfml-window-2.dll
+/More-GOL/sfml-system-d-2.dll
+/More-GOL/sfml-system-2.dll
+/More-GOL/sfml-network-d-2.dll
+/More-GOL/sfml-network-2.dll
+/More-GOL/sfml-graphics-d-2.dll
+/More-GOL/sfml-graphics-2.dll
+/More-GOL/sfml-audio-d-2.dll
+/More-GOL/sfml-audio-2.dll
+/More-GOL/openal32.dll
+/More-GOL/Dependencies/SFML
