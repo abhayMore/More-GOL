@@ -64,20 +64,23 @@ int main()
 
 	FileSystem PatternNamesFile("./Config Files/Names.ini");
 	std::vector<sf::Text> patternNames(allPatterns.size());
-
+	patternNames = PatternNamesFile.getPatternNames(patternNames);
 	for (int i = 0; i < patternNames.size(); i++)
 	{
 		patternNames[i].setFont(Dosis);
-		patternNames[i].setString("ERROR :  No Name Present");
 		patternNames[i].setCharacterSize(25);
+		if (patternNames[i].getString() == "")
+		{
+			patternNames[i].setString("ERROR :  No Name Present");
+		}
 		patternNames[i].setFillColor(sf::Color::White);
 		patternNames[i].setOutlineThickness(2);
 		patternNames[i].setOutlineColor(sf::Color::Magenta);
 		patternNames[i].setStyle(sf::Text::Bold);
 		patternNames[i].setOrigin(patternNames[i].getLocalBounds().width / 2.0f, patternNames[i].getLocalBounds().height / 2.0f);
-		patternNames[i].setPosition(sf::Vector2f(810 + (1200 - 810) / 2, grid.getMenuLevels().y / 2));
+		patternNames[i].setPosition(sf::Vector2f(810 + (1200 - 800) / 2, grid.getMenuLevels().y / 2));
 	}
-	patternNames = PatternNamesFile.getPatternNames(patternNames);
+	
 
 	bool start = false;
 	bool mouseDraw = false;
@@ -86,7 +89,6 @@ int main()
 	bool controlButtonPressed = false;
 	bool mouseHovered = true;
 	int nextValue = 0;
-
 	while (window.isOpen())
 	{
 		sf::Event event;
