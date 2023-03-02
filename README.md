@@ -10,3 +10,10 @@ If you want to open this in Visual Studio, follow these steps :
 4. Copy the renamed SFML folder and paste it inside the Dependencies directory.
 5. Copy the contents of bin folder inside SFML folder and paste it inside the More-GOL directory where all other directories are present.
 6. You are done, open the solution file and run the Project.
+
+Further additions
+1. Fix the platform Spawn.
+2. Add variation of platforms
+3. Fix Collision of Doodle & Platform (One Way Collsion)
+4. Add File System to store highscores
+5. Add powerups
